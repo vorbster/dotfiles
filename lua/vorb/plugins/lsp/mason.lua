@@ -24,6 +24,7 @@ mason_lspconfig.setup({
 	ensure_installed = {
 		"tsserver",
 		"bashls",
+		"svlangserver",
 		"ansiblels",
 		"clangd",
 		"pyright",
