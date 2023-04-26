@@ -1,20 +1,32 @@
--- import lspconfig plugin safely
 local lspconfig_status, lspconfig = pcall(require, "lspconfig")
 if not lspconfig_status then
 	return
 end
 
--- import cmp-nvim-lsp plugin safely
 local cmp_nvim_lsp_status, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
 if not cmp_nvim_lsp_status then
 	return
 end
 
--- import typescript plugin safely
 local typescript_setup, typescript = pcall(require, "typescript")
 if not typescript_setup then
 	return
 end
+
+-- Initialize lsp languages
+require("lspconfig").clangd.setup({})
+require("lspconfig").yamlls.setup({
+	settings = {
+		yaml = {
+			schemaStore = {
+				enable = true,
+				url = "https://www.schemastore.org/api/json/catalog.json",
+			},
+		},
+	},
+})
+require("lspconfig").svlangserver.setup({})
+require("lspconfig").ansiblels.setup({})
 
 local keymap = vim.keymap -- for conciseness
 
@@ -55,24 +67,3 @@ for type, icon in pairs(signs) do
 	local hl = "DiagnosticSign" .. type
 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
-
--- configure lua server (with special settings)
-lspconfig["sumneko_lua"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-	settings = { -- custom settings for lua
-		Lua = {
-			-- make the language server recognize "vim" global
-			diagnostics = {
-				globals = { "vim" },
-			},
-			workspace = {
-				-- make language server aware of runtime files
-				library = {
-					[vim.fn.expand("$VIMRUNTIME/lua")] = true,
-					[vim.fn.stdpath("config") .. "/lua"] = true,
-				},
-			},
-		},
-	},
-})
