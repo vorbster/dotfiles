@@ -134,6 +134,7 @@ if [[ $UNAME -eq "Darwin" ]]; then
 fi
 
 SHORT_HOSTNAME=`hostname -s`
+alias vim=nvim
 
 #prompt_context() {
 #  prompt_segment green default "%(!.%{%F{yellow}%}.)$SHORT_HOSTNAME"
