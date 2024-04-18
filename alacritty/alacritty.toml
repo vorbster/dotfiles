@@ -1,0 +1,25 @@
+import = [
+  "~/.config/alacritty/campbell.toml"
+]
+
+[font]
+size = 20
+
+  [font.bold]
+  family = "JetBrainsMono Nerd Font"
+  style = "Heavy"
+
+  [font.bold_italic]
+  family = "JetBrainsMono Nerd Font"
+  style = "Heavy Italic"
+
+  [font.italic]
+  family = "JetBrainsMono Nerd Font"
+  style = "Medium Italic"
+
+  [font.normal]
+  family = "JetBrainsMono Nerd Font"
+  style = "Medium"
+
+[window]
+opacity = 0.97

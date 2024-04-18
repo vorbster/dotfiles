@@ -1,1 +1,6 @@
-My NeoVim configs
+Dotfiles: 
+
+- Neovim
+- Tmux
+- Zsh
+- Alacritty
