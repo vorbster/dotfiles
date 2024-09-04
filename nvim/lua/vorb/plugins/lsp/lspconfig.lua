@@ -46,23 +46,26 @@ require("lspconfig").clangd.setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
-require("lspconfig").yamlls.setup({
-	settings = {
-		yaml = {
-			schemaStore = {
-				enable = true,
-				url = "https://www.schemastore.org/api/json/catalog.json",
-			},
-		},
-	},
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+--require("lspconfig").yamlls.setup({
+--	settings = {
+--		yaml = {
+--			schemaStore = {
+--				enable = true,
+--				url = "https://www.schemastore.org/api/json/catalog.json",
+--			},
+--		},
+--	},
+--	capabilities = capabilities,
+--	on_attach = on_attach,
+--})
 require("lspconfig").svlangserver.setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
 require("lspconfig").ansiblels.setup({
+	filetypes = {
+		"yaml",
+	},
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
