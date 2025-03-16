@@ -5,7 +5,7 @@ macos-icon = xray
 
 font-family = CaskaydiaCove Nerd Font
 font-thicken = true
-font-size = 24
+font-size = 16
 
 mouse-hide-while-typing = true
 
