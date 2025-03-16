@@ -1,0 +1,18 @@
+term = xterm-256color
+theme = stardust
+
+macos-icon = xray
+
+font-family = CaskaydiaCove Nerd Font
+font-thicken = true
+font-size = 24
+
+mouse-hide-while-typing = true
+
+window-decoration = true
+
+background = 000000
+background-opacity = 0.8
+background-blur-radius = 20
+
+keybind = global:cmd+s=toggle_quick_terminal
