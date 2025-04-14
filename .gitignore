@@ -1,3 +1,4 @@
 .tmux/plugins/tmux-themepack/
 .tmux/plugins/tpm/
 .tmux/plugins/vim-tmux-navigator/
+neovim/.config/nvim/plugin/
