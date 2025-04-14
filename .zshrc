@@ -161,5 +161,7 @@ _fzf_compgen_dir() {
 
 source /usr/local/bin/fzf-git.sh
 
+export PATH=$PATH:/opt/local/bin
+
 alias ls="eza --color=always --long --git --icons=always"
 alias mc="mc --nosubshell"
