@@ -39,8 +39,8 @@ return require("packer").startup(function(use)
 	use("saadparwaiz1/cmp_luasnip")
 	use("rafamadriz/friendly-snippets")
 	-- Mason
-	use("williamboman/mason.nvim")
-	use("williamboman/mason-lspconfig.nvim")
+	use("mason-org/mason.nvim")
+	use("mason-org/mason-lspconfig.nvim")
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")
 	-- LSP
