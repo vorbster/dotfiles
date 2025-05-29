@@ -41,8 +41,6 @@ return require("packer").startup(function(use)
 	-- Mason
 	use("mason-org/mason.nvim")
 	use("mason-org/mason-lspconfig.nvim")
-	use("jose-elias-alvarez/null-ls.nvim")
-	use("jayp0521/mason-null-ls.nvim")
 	-- LSP
 	use("neovim/nvim-lspconfig")
 	use("hrsh7th/cmp-nvim-lsp")
