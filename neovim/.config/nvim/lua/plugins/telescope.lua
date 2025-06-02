@@ -1,14 +1,13 @@
-local builtin = require('telescope.builtin')
 return {
     'nvim-telescope/telescope.nvim',
     dependencies = { 'nvim-lua/plenary.nvim' },
     keys = {
-        { '<leader>ff', builtin.find_files, desc = "Telescope Find Files" },
-        { '<leader>fg', builtin.live_grep, desc = "Telescope Live Grep" },
-        { '<leader>fb', builtin.buffers, desc = "Telescope Buffers" },
-        { '<leader>fh', builtin.help_tags, desc = "Telescope Help Tags" },
-        { '<leader>fc', builtin.grep_string, desc = "Telescope Grep String under cursor" },
-        { '<leader>fh', builtin.help_tags, desc = "Telescope Help tags" },
-        { '<leader>fr', builtin.lsp_references, desc = "Telescope LSP references" },
-    },
+        { '<leader>ff', "<cmd>Telescope find_files<cr>", desc = "Telescope Find Files" },
+        { '<leader>fg', "<cmd>Telescope live_grep<cr>", desc = "Telescope Live Grep" },
+        { '<leader>fb', "<cmd>Telescope buffers<cr>", desc = "Telescope Buffers" },
+        { '<leader>fh', "<cmd>Telescope help_tags<cr>", desc = "Telescope Help Tags" },
+        { '<leader>fc', "<cmd>Telescope grep_string<cr>", desc = "Telescope Grep String under cursor" },
+        { '<leader>fh', "<cmd>Telescope help_tags<cr>", desc = "Telescope Help tags" },
+        { '<leader>fr', "<cmd>Telescope lsp_references<cr>", desc = "Telescope LSP references" },
+   },
 }
