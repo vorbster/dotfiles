@@ -10,12 +10,18 @@ return {
         config = function()
             require("mason-lspconfig").setup({
                 ensure_installed = {
+                    "lua_ls",
                     "bashls",
                     "ansiblels",
                     "clangd",
-                    "cmake",
                     "pylsp",
-                    "luals"
+                    "asm-lsp",
+                    "autotools_ls",
+                    "awk_ls",
+                    "cmake",
+                    "dockerls",
+                    "ltex_plus",
+                    "systemd_ls",
                 },
             })
             end,
