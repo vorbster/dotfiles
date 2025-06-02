@@ -2,3 +2,4 @@
 .tmux/plugins/tpm/
 .tmux/plugins/vim-tmux-navigator/
 neovim/.config/nvim/plugin/
+neovim/lazy-lock.json
