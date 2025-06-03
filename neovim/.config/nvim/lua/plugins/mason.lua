@@ -15,7 +15,7 @@ return {
                     "ansiblels",
                     "clangd",
                     "pylsp",
-                    "asm-lsp",
+                    "asm_lsp",
                     "autotools_ls",
                     "awk_ls",
                     "cmake",
