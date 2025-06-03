@@ -1,7 +1,7 @@
 return {
     {
       "rebelot/kanagawa.nvim",
-      name = "kanagawa", 
+      name = "kanagawa",
       config = function()
        vim.cmd ("colorscheme kanagawa")
       end,

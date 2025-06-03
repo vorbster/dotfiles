@@ -3,3 +3,7 @@
 .tmux/plugins/vim-tmux-navigator/
 neovim/.config/nvim/plugin/
 neovim/.config/nvim/lazy-lock.json
+mc/.config/mc/ini
+mc/.config/mc/panels.ini
+neovim/.config/nvim/lazy-lock.json
+mc/.local/share/mc/history
