@@ -8,7 +8,7 @@ return {
             interpreterPath = 'python',
         },
         ansible = {
-            path = ansible,
+            path = 'ansible',
         },
         executionEnvironment ={
             enabled = false,

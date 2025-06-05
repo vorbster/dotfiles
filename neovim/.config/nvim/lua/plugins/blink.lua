@@ -32,7 +32,12 @@ return {
                     },
                 },
                 keymap = {
-                    ["<C-f>"] = {},
+                    ["<C-j>"] = { "select_next", "fallback" },
+                    ["<C-k>"] = { "select_prev", "fallback" },
+                    ["<C-u>"] = { "scroll_documentation_up", "fallback" },
+                    ["<C-d>"] = { "scroll_documentation_down", "fallback" },
+                    ["<CR>"] = { "accept", "fallback" },
+                    ["<Esc>"] = { "hide", "fallback" },
                 },
                 cmdline = {
                     enabled = false,

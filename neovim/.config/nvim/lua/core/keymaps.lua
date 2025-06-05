@@ -6,6 +6,13 @@ keymap.set ('n', "<leader>lA", function() vim.lsp.buf.range_code_action({apply=t
 keymap.set ('n', "<leader>ls", function() vim.lsp.buf.signature_help() end)
 keymap.set ('n', "<leader>lr", function() vim.lsp.buf.rename() end)
 keymap.set ('n', "<leader>lf", function() vim.lsp.buf.format() end)
+keymap.set ('n', "<leader>lh", function() vim.lsp.buf.hover() end)
+keymap.set ('n', "<leader>lR", function() vim.lsp.buf.references() end)
+keymap.set ('n', "<leader>li", function() vim.lsp.buf.implementation() end)
+keymap.set ('n', "<leader>lo", function() vim.diagnostic.open_float() end)
+keymap.set ('n', "<leader>ld", function() vim.lsp.buf.definition() end)
+keymap.set ('n', "<leader>lD", function() vim.lsp.buf.type_definition() end)
+keymap.set ('n', "<leader>lg", function() vim.lsp.buf.declaration() end)
 
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
@@ -17,5 +24,3 @@ keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
-
-keymap.set("n", "<leader>mm", "<cmd>silent !tmux split-window -p 30; tmux send make ENTER<cr>") -- Open a new window and run make
