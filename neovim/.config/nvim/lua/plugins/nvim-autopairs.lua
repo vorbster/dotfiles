@@ -5,7 +5,7 @@ return {
       config = function()
         require("nvim-autopairs").setup({
             check_ts = true,
-            disable_filetype = { "TelescopePrompt" , "vim" },    
+            disable_filetype = { "TelescopePrompt" , "vim" },
             ts_config = {
                 lua = { "string" },
             },
@@ -13,6 +13,3 @@ return {
       end,
     }
 }
-
-      
-
