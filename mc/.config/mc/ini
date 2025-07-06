@@ -122,6 +122,7 @@ alacritty=
 screen-256color=
 
 linux=
+tmux-256color=
 
 [Panels]
 show_mini_info=true
