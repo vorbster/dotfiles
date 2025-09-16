@@ -3,7 +3,7 @@ theme = stardust
 
 macos-icon = xray
 
-font-family = CaskaydiaCove Nerd Font
+font-family = SFMono Nerd Font
 font-thicken = true
 font-size = 18
 
