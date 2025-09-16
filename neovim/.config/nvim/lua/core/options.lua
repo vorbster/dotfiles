@@ -3,6 +3,7 @@ local opt = vim.opt
 -- line numbers
 opt.relativenumber = true
 opt.number = true
+opt.clipboard = ""
 
 -- tabs and indent
 opt.tabstop = 2
@@ -25,9 +26,6 @@ opt.cmdheight = 0
 
 -- backspace
 opt.backspace = "indent,eol,start"
-
--- clipboard
-opt.clipboard:append("unnamedplus")
 
 -- split windows
 opt.splitright = true
