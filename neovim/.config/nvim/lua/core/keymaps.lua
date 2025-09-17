@@ -27,8 +27,8 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
 -- Copilot keymap
 
-keymap.set("n", "<leader>co", ":CopilotChatOpen<CR>") -- Open Copilot chat 
-keymap.set("n", "<leader>cx", ":CopilotChatClose<CR>") -- Close Copilot chat 
-keymap.set("n", "<leader>cc", ":CopilotChatToggle<CR>") -- Toggle Copilot chat 
-keymap.set("n", "<leader>cs", ":CopilotChatStop<CR>") -- Stop Copilot chat 
+keymap.set("n", "<leader>co", ":CopilotChatOpen<CR>") -- Open Copilot chat
+keymap.set("n", "<leader>cx", ":CopilotChatClose<CR>") -- Close Copilot chat
+keymap.set("n", "<leader>cc", ":CopilotChatToggle<CR>") -- Toggle Copilot chat
+keymap.set("n", "<leader>cs", ":CopilotChatStop<CR>") -- Stop Copilot chat
 keymap.set("n", "<leader>cr", ":CopilotChatReset<CR>") -- Reset Copilot chat
