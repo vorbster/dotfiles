@@ -89,7 +89,7 @@ shell_directory_timeout=900
 
 [Layout]
 output_lines=0
-left_panel_size=60
+left_panel_size=111
 top_panel_size=0
 message_visible=true
 keybar_visible=true
@@ -122,6 +122,7 @@ alacritty=
 screen-256color=
 
 linux=
+tmux-256color=
 
 [Panels]
 show_mini_info=true
