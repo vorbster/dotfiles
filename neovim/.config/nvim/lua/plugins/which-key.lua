@@ -23,6 +23,7 @@ return {
     spec = {
       {
         mode = { "n", "v" },
+        { "<leader>c", group = "Copilot" },
         { "<leader>f", group = "Find" },
         { "<leader>R", group = "Replace" },
         { "<leader>l", group = "LSP" },
@@ -54,6 +55,12 @@ return {
         { "<leader>tx", desc = "Close current tab"},
         { "<leader>tn", desc = "Next tab"},
         { "<leader>tp", desc = "Previous tab"},
+                -- Copilot
+        { "<leader>co", desc = "Open Copilot chat"},
+        { "<leader>cx", desc = "Close Copilot chat"},
+        { "<leader>cc", desc = "Toggle Copilot chat"},
+        { "<leader>cs", desc = "Stop Copilot chat"},
+        { "<leader>cr", desc = "Reset Copilot chat"},
       },
     },
   },

@@ -1,5 +1,5 @@
 return {
-    { "L3MON4D3/LuaSnip",      keys = {} },
+    { "L3MON4D3/LuaSnip", keys = {} },
     {
         "saghen/blink.cmp",
         dependencies = {
@@ -37,7 +37,7 @@ return {
                     ["<C-u>"] = { "scroll_documentation_up", "fallback" },
                     ["<C-d>"] = { "scroll_documentation_down", "fallback" },
                     ["<CR>"] = { "accept", "fallback" },
-                    ["<Esc>"] = { "hide", "fallback" },
+--                    ["<Esc>"] = { "hide", "fallback" },
                 },
                 cmdline = {
                     enabled = false,
@@ -47,6 +47,12 @@ return {
                     },
                 },
                 completion = {
+                    list = {
+                        selection = {
+                            preselect = false,
+                            auto_insert = true
+                        },
+                    },
                     menu = {
                         border = nil,
                         scrolloff = 1,
