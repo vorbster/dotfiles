@@ -1,7 +1,7 @@
 term = xterm-256color
 theme = dracula
 
-macos-icon = xray
+macos-icon = glass
 
 font-family = SFMono Nerd Font
 font-thicken = true
