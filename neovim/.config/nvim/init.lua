@@ -3,7 +3,7 @@ require("core.keymaps")
 require("core.options")
 require("core.lazy")
 
-local hardmode = true
+local hardmode = false
 if hardmode then
     -- Show an error message if a disabled key is pressed
     local msg = [[<cmd>echohl Error | echo "KEY DISABLED" | echohl None<CR>]]
