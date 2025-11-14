@@ -166,3 +166,4 @@ export PATH=$PATH:/opt/local/bin
 
 alias ls="eza --color=always --long --git --icons=always"
 alias mc="mc --nosubshell"
+bindkey -v
