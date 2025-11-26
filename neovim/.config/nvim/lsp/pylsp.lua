@@ -11,4 +11,26 @@ return {
     'Pipfile',
     '.git',
   },
+  settings = {
+    pylsp = {
+      plugins = {
+        pycodestyle = {
+          enabled = false,
+        },
+        pylint = {
+          enabled = false,
+        },
+        flake8 = {
+          enabled = true,
+          maxLineLength = 120,
+        },
+        mccabe = {
+          enabled = false,
+        },
+        pyflakes = {
+          enabled = false,
+        },
+      },
+    },
+  },
 }
