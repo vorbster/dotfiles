@@ -1,3 +1,9 @@
 [user]
 	name = Dima S.
 	email = git@vorbster.guru
+
+[includeIf "gitdir:~/Projects/loewenhz/"]
+    path = ~/Projects/loewenhz/.gitconfig
+
+[includeIf "gitdir:~/Projects/vorbster/"]
+    path = ~/Projects/vorbster/.gitconfig

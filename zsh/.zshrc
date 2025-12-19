@@ -147,6 +147,9 @@ alias vim=nvim
 # To customize prompt, run `p10k configure` or edit ~/.config/nvim/zsh/p10k.zsh.
 [[ ! -f ~/.config/nvim/zsh/p10k.zsh ]] || source ~/.config/nvim/zsh/p10k.zsh
 
+# Export xAI key
+[[ -f ~/.xai ]] && export XAI_API_KEY=$(cat ~/.xai)
+
 eval "$(fzf --zsh)"
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
