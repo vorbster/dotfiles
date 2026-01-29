@@ -19,7 +19,7 @@ return {
                     "cmake",
                     "dockerls",
                     "ltex_plus",
-                    "systemd_ls",
+                    "systemd-lsp",
                 },
             })
             end,

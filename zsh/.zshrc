@@ -170,3 +170,10 @@ export PATH=$PATH:/opt/local/bin
 alias ls="eza --color=always --long --git --icons=always"
 alias mc="mc --nosubshell"
 bindkey -v
+
+# bun completions
+[ -s "/Users/vorb/.bun/_bun" ] && source "/Users/vorb/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
