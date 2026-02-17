@@ -25,10 +25,14 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
--- Copilot keymap
+-- AI keymap
 
 keymap.set("n", "<leader>co", ":CopilotChatOpen<CR>") -- Open Copilot chat
 keymap.set("n", "<leader>cx", ":CopilotChatClose<CR>") -- Close Copilot chat
 keymap.set("n", "<leader>cc", ":CopilotChatToggle<CR>") -- Toggle Copilot chat
 keymap.set("n", "<leader>cs", ":CopilotChatStop<CR>") -- Stop Copilot chat
 keymap.set("n", "<leader>cr", ":CopilotChatReset<CR>") -- Reset Copilot chat
+keymap.set("x", "<leader>ce", ":CodeCompanion /explain<CR>") -- Explain code with Code Companion
+keymap.set("x", "<leader>cf", ":CodeCompanion /fix<CR>") --Fix code with Code Companion
+keymap.set("x", "<leader>cl", ":CodeCompanion /lsp<CR>") -- Explain LSP errors with Code Companion
+keymap.set("n", "<leader>cw", ":CodeCompanionChat<CR>") -- Open Code Companion chat
