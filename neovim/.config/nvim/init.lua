@@ -1,7 +1,7 @@
-require("core.lsp")
 require("core.keymaps")
 require("core.options")
 require("core.lazy")
+require("core.lsp")
 
 local hardmode = false
 if hardmode then
