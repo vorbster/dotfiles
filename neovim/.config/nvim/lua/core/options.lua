@@ -33,3 +33,6 @@ opt.splitbelow = true
 
 opt.iskeyword:append("-")
 opt.numberwidth = 3
+
+-- new autocomplete option
+opt.autocomplete = true
