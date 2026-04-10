@@ -59,3 +59,6 @@ keymap.set("n", "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>")
 keymap.set("n", "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>")
 keymap.set("n", "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>")
 keymap.set("n", "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>")
+
+keymap.set("n", "<leader>cd", ":cd %:p:h<CR>") -- Change directory to current file
+keymap.set("n", "<leader>cp", ':let @+ = expand("%:p")<CR>') -- Copy current file path to clipboard
