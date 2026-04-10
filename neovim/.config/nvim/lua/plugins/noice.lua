@@ -1,3 +1,5 @@
+-- Noice is using the new experimental vim.ui_attach API, so issues are to be expected. It is highly recommended to use Neovim nightly, since a bunch of issues have already been fixed upstream. Check this tracking issue for a list of known issues.
+
 return {
   "folke/noice.nvim",
   event = "VeryLazy",

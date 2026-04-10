@@ -1,3 +1,6 @@
+-- Commenting plugin for Neovim
+--
+
 return {
     {
         "numToStr/Comment.nvim",

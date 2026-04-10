@@ -1,3 +1,5 @@
+-- blink.cmp is a completion plugin with support for LSPs, cmdline, signature help, and snippets. It uses an optional custom fuzzy matcher for typo resistance. It provides extensibility via pluggable sources (LSP, buffer, snippets, etc), component based rendering and dynamic configuration.
+
 return {
     { "L3MON4D3/LuaSnip", keys = {} },
     {
