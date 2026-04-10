@@ -1,6 +1,8 @@
 vim.g.mapleader = " "
 local keymap = vim.keymap
 
+keymap.set ('n', "<leader>e", ":NvimTreeToggle<CR>")
+keymap.set ('n', "<leader>lG", "<cmd>LazyGit<CR>")
 keymap.set ('n', "<leader>la", function() vim.lsp.buf.code_action({apply=true}) end)
 keymap.set ('n', "<leader>lA", function() vim.lsp.buf.range_code_action({apply=true}) end)
 keymap.set ('n', "<leader>ls", function() vim.lsp.buf.signature_help() end)
@@ -36,3 +38,24 @@ keymap.set("x", "<leader>ce", ":CodeCompanion /explain<CR>") -- Explain code wit
 keymap.set("x", "<leader>cf", ":CodeCompanion /fix<CR>") --Fix code with Code Companion
 keymap.set("x", "<leader>cl", ":CodeCompanion /lsp<CR>") -- Explain LSP errors with Code Companion
 keymap.set("n", "<leader>cw", ":CodeCompanionChat<CR>") -- Open Code Companion chat
+
+-- Telescope
+
+keymap.set("n", "<leader>ff", ":Telescope find_files<CR>") -- Telescope Find Files
+keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>") -- Telescope Live Grep
+keymap.set("n", "<leader>fb", ":Telescope buffers<CR>") -- Telescope Buffers
+keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>") -- Telescope Help Tags
+keymap.set("n", "<leader>fc", ":Telescope grep_string<CR>") -- Telescope Grep String under cursor
+keymap.set("n", "<leader>fr", ":Telescope lsp_references<CR>") -- Telescope LSP references
+
+-- Maximizer
+
+keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- Vim Maximizer
+
+-- Tmux navigation
+
+keymap.set("n", "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>")
+keymap.set("n", "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>")
+keymap.set("n", "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>")
+keymap.set("n", "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>")
+keymap.set("n", "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>")

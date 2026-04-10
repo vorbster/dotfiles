@@ -1,9 +1,3 @@
-return {
-    {
-        "szw/vim-maximizer",
-        lazy = false,
-        keys = {
-          { "<leader>sm", ":MaximizerToggle<CR>", desc = "Vim Maximizer" }
-        },
-    }
-}
+vim.pack.add({
+    'https://github.com/szw/vim-maximizer.git'
+})
