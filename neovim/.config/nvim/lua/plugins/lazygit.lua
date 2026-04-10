@@ -1,3 +1,5 @@
+-- Git integration with Neovim 
+
 return {
     "kdheepak/lazygit.nvim",
     lazy = true,

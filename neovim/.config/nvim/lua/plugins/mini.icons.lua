@@ -1,7 +1,8 @@
 return {
-    "echasnovski/mini.icons",
-    enabled = true,
-    opts = {},
-    lazy = true,
+    "nvim-mini/mini.icons",
+    version = false,
+    config = function ()
+        require('mini.icons').setup({})
+    end
 }
 
