@@ -5,5 +5,6 @@ neovim/.config/nvim/plugin/
 neovim/.config/nvim/lazy-lock.json
 mc/.config/mc/ini
 mc/.config/mc/panels.ini
-neovim/.config/nvim/lazy-lock.json
+neovim/.config/nvim.old/lazy-lock.json
+neovim/.config/nvim/nvim-pack-lock.json
 mc/.local/share/mc/history
