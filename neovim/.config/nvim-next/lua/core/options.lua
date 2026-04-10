@@ -36,3 +36,8 @@ opt.numberwidth = 3
 
 -- new autocomplete option
 opt.autocomplete = true
+
+opt.foldmethod = 'expr'
+opt.foldexpr = 'nvim_treesitter#foldexpr()'
+opt.foldlevel = 99
+opt.foldenable = false
