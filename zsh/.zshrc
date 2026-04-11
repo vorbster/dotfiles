@@ -177,3 +177,5 @@ bindkey -v
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$(brew --prefix python@3.13)/libexec/bin:$PATH"
