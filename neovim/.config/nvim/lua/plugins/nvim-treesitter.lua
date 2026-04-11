@@ -12,6 +12,7 @@ vim.pack.add({
 require("nvim-treesitter").setup({})
 require("nvim-treesitter").install({
     "bash",
+    "diff",
     "c",
     "json",
     "lua",
