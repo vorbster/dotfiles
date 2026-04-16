@@ -3,6 +3,10 @@ vim.pack.add({
     "https://github.com/nvim-tree/nvim-tree.lua.git",
 })
 
+require("nvim-web-devicons").setup({
+    default = true,
+})
+
 vim.cmd([[ highlight NvimTreeIndentMarker guifg=#F3AF12 ]])
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
