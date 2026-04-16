@@ -1,6 +1,6 @@
 vim.pack.add({
+    "https://github.com/nvim-tree/nvim-web-devicons.git",
     "https://github.com/nvim-tree/nvim-tree.lua.git",
-    "https://github.com/nvim-tree/nvim-web-devicons.git"
 })
 
 vim.cmd([[ highlight NvimTreeIndentMarker guifg=#F3AF12 ]])
