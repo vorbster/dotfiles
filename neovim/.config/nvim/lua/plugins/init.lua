@@ -1,5 +1,5 @@
-require("plugins.colorscheme")
 require("plugins.nvim-tree")
+require("plugins.colorscheme")
 require("plugins.comment")
 require("plugins.copilot-chat")
 require("plugins.copilot")
