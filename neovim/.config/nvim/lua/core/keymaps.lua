@@ -41,8 +41,8 @@ keymap.set("n", "<leader>cw", ":CodeCompanionChat<CR>") -- Open Code Companion c
 
 -- Telescope
 
-keymap.set("n", "<leader>ff", ":Telescope find_files<CR>") -- Telescope Find Files
-keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>") -- Telescope Live Grep
+keymap.set("n", "<leader>ff", ":Telescope find_files hidden=true<CR>") -- Telescope Find Files
+keymap.set("n", "<leader>fg", ":Telescope live_grep hidden=true<CR>") -- Telescope Live Grep
 keymap.set("n", "<leader>fb", ":Telescope buffers<CR>") -- Telescope Buffers
 keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>") -- Telescope Help Tags
 keymap.set("n", "<leader>fc", ":Telescope grep_string<CR>") -- Telescope Grep String under cursor
