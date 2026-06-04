@@ -1,11 +1,5 @@
--- Commenting plugin for Neovim
---
+vim.pack.add ({
+    'https://github.com/numToStr/Comment.nvim.git'
+})
 
-return {
-    {
-        "numToStr/Comment.nvim",
-        config = function()
-            require('Comment').setup()
-        end,
-    }
-}
+require('Comment').setup()

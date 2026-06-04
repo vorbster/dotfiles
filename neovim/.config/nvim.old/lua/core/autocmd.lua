@@ -18,3 +18,10 @@ vim.api.nvim_create_autocmd("FileType", {
         pcall(vim.treesitter.start)
     end,
 })
+
+api.nvim_create_autocmd("CmdlineChanged", {
+    pattern = ":",
+    callback = function()
+        vim.fn.wildtrigger()
+    end
+})

@@ -1,9 +1,5 @@
-return {
-    {
-        "Mofiqul/dracula.nvim",
-        name = "dracula",
-        config = function()
-            vim.cmd ("colorscheme dracula")
-        end,
-    }
-}
+vim.pack.add ({
+    { src = "https://github.com/Mofiqul/dracula.nvim.git" },
+})
+
+vim.cmd ("colorscheme dracula")

@@ -1,5 +1,3 @@
-local blink = require("blink.cmp")
-
 return {
   cmd = { 'pylsp' },
   filetypes = { 'python' },
