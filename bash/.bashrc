@@ -1,7 +1,7 @@
 # Enable the subsequent settings only in interactive sessions
 case $- in
-  *i*) ;;
-    *) return;;
+*i*) ;;
+*) return ;;
 esac
 
 # Path to your oh-my-bash installation.
@@ -155,6 +155,7 @@ source "$OSH"/oh-my-bash.sh
 # Example aliases
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
+THEME_SHOW_CLOCK=false
 export PATH="$PATH:/Users/vorb/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/Applications/VMware Fusion.app/Contents/Public:/opt/homebrew/bin:/Applications/Ghostty.app/Contents/MacOS:/opt/local/bin"
 alias vim=nvim
 alias lg=lazygit
@@ -162,24 +163,24 @@ alias lg=lazygit
 UNAME=$(uname)
 
 if [[ $UNAME == "Linux" ]]; then
-    export HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew";
-    export HOMEBREW_CELLAR="/home/linuxbrew/.linuxbrew/Cellar";
-    export HOMEBREW_REPOSITORY="/home/linuxbrew/.linuxbrew/Homebrew";
-    export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin${PATH+:$PATH}";
-    export MANPATH="/home/linuxbrew/.linuxbrew/share/man${MANPATH+:$MANPATH}:";
-    export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:${INFOPATH:-}";
+  export HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
+  export HOMEBREW_CELLAR="/home/linuxbrew/.linuxbrew/Cellar"
+  export HOMEBREW_REPOSITORY="/home/linuxbrew/.linuxbrew/Homebrew"
+  export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin${PATH+:$PATH}"
+  export MANPATH="/home/linuxbrew/.linuxbrew/share/man${MANPATH+:$MANPATH}:"
+  export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:${INFOPATH:-}"
 fi
 
 if [[ $UNAME -eq "Darwin" ]]; then
-    export HOMEBREW_PREFIX="/opt/homebrew";
-    export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
-    export HOMEBREW_REPOSITORY="/opt/homebrew";
-    export PATH="/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}";
-    export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
-    export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
+  export HOMEBREW_PREFIX="/opt/homebrew"
+  export HOMEBREW_CELLAR="/opt/homebrew/Cellar"
+  export HOMEBREW_REPOSITORY="/opt/homebrew"
+  export PATH="/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}"
+  export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:"
+  export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}"
 fi
 
-SHORT_HOSTNAME=`hostname -s`
+SHORT_HOSTNAME=$(hostname -s)
 
 # Export xAI key
 [[ -f ~/.xai ]] && export XAI_API_KEY=$(cat ~/.xai)
