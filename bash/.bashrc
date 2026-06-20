@@ -4,8 +4,14 @@ case $- in
 *) return ;;
 esac
 
+UNAME=$(uname)
+
 # Path to your oh-my-bash installation.
-export OSH='/Users/vorb/.oh-my-bash'
+if [[ $UNAME == "Linux" ]]; then
+  export OSH='/home/vorb/.oh-my-bash'
+else
+  export OSH='/Users/vorb/.oh-my-bash'
+fi
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
@@ -159,8 +165,6 @@ THEME_SHOW_CLOCK=false
 export PATH="$PATH:/Users/vorb/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/Applications/VMware Fusion.app/Contents/Public:/opt/homebrew/bin:/Applications/Ghostty.app/Contents/MacOS:/opt/local/bin"
 alias vim=nvim
 alias lg=lazygit
-
-UNAME=$(uname)
 
 if [[ $UNAME == "Linux" ]]; then
   export HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
