@@ -1,0 +1,46 @@
+# === Paths ===
+set folder      = "~/.local/share/mail/yahoo"
+set mbox_type   = Maildir
+set spoolfile   = "+INBOX"
+set postponed   = "+Draft"
+set record      = "+Sent"
+set trash       = "+Trash"
+
+set from        = "Vorbster <vorbster@yahoo.com>"
+set realname    = "Dima S."
+
+# === SMTP ===
+set smtp_url    = "smtps://vorbster@yahoo.com@smtp.mail.yahoo.com:465"
+set smtp_pass   = `security find-internet-password -s imap.mail.yahoo.com -a vorbster@yahoo.com -w`
+set smtp_authenticators = "login"
+set ssl_force_tls = yes
+
+# === Register mailboxes (important for sidebar) ===
+unmailboxes *
+mailboxes +INBOX +Sent +Draft +Trash +Bulk +linux-kernel
+
+# === Sidebar ===
+set mail_check_stats = yes
+set mail_check_stats_interval = 60
+
+set sidebar_visible     = yes
+set sidebar_width       = 22
+set sidebar_short_path  = yes
+set sidebar_format      = "%B%?F? [%F]?%* %?N?%N/?%S"
+
+color sidebar_new       green default
+color sidebar_flagged   red default
+color sidebar_highlight black color238
+color sidebar_indicator black color39
+
+bind index,pager K sidebar-prev
+bind index,pager J sidebar-next
+bind index,pager H sidebar-open
+bind index,pager B   sidebar-toggle-visible
+
+bind pager j next-line
+bind pager k previous-line
+bind pager \Cu half-up
+bind pager \Cd half-down
+
+source ~/.config/neomutt/terminal_basic_dark.rc
