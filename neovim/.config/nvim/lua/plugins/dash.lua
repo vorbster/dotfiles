@@ -63,6 +63,7 @@ return {
               { icon = " ", key = "f", desc = "Find File",       action = ":lua Snacks.dashboard.pick('files')" },
               { icon = " ", key = "n", desc = "New File",        action = ":ene | startinsert" },
               { icon = " ", key = "s", desc = "Restore Session", section = "session" },
+              { icon = "󰉋 ", key = "N", desc = "Notes",           action = ":lua Snacks.explorer.open({ cwd = '~/Documents/Notes' })"},
               { icon = " ", key = "q", desc = "Quit",            action = ":qa" } },
             { title = "Recent Projects", section = "projects", indent = 2, padding = 1 },
             { title = "Maintenance Actions", indent = 2, padding = 2,
