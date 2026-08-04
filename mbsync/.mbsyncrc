@@ -1,0 +1,29 @@
+IMAPAccount yahoo
+Host imap.mail.yahoo.com
+Port 993
+User vorbster@yahoo.com          # full email address
+# Prefer PassCmd over plain Pass
+PassCmd "security find-internet-password   -s imap.mail.yahoo.com   -a vorbster@yahoo.com   -w"
+# Pass "your-app-password-here"  # only for quick testing
+TLSType IMAPS
+# CertificateFile /etc/ssl/certs/ca-certificates.crt   # uncomment if needed
+Timeout 60
+PipelineDepth 50
+AuthMechs LOGIN
+
+IMAPStore yahoo-remote
+Account yahoo
+
+MaildirStore yahoo-local
+SubFolders Verbatim
+Path ~/.local/share/mail/yahoo/
+Inbox ~/.local/share/mail/yahoo/INBOX
+
+Channel yahoo
+Far :yahoo-remote:
+Near :yahoo-local:
+Patterns *                       # sync everything; restrict if desired
+Create Both
+Expunge Both
+SyncState *
+CopyArrivalDate yes
