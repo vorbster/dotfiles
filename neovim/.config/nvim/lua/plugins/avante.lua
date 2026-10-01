@@ -1,5 +1,11 @@
 return {
   "yetone/avante.nvim",
+  dependencies = {
+    {
+      "ColinKennedy/mega.cmdparse",
+      dependencies = { "ColinKennedy/mega.logging" },
+    },
+  },
   opts = {
     provider = "xai",
 
