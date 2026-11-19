@@ -198,10 +198,12 @@ fi
 
 SHORT_HOSTNAME=$(hostname -s)
 
-# Export xAI key
-[[ -f ~/.xai ]] && export XAI_API_KEY=$(cat ~/.xai)
-
 eval "$(fzf --bash)"
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type d --hidden --strip-cwd-prefix --exclude .git"
+
+# >>> grok installer >>>
+export PATH="$HOME/.grok/bin:$PATH"
+[[ -r "$HOME/.grok/completions/bash/grok.bash" ]] && source "$HOME/.grok/completions/bash/grok.bash"
+# <<< grok installer <<<
